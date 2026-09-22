@@ -1,0 +1,103 @@
+{
+  "he_thong": "Hệ thống điểm danh sinh viên qua mã QR",
+  "thanh_phan": [
+    {
+      "ten": "Ứng dụng Di động",
+      "vai_tro": "Gửi yêu cầu điểm danh và vị trí GPS của sinh viên"
+    },
+    {
+      "ten": "Máy chủ API",
+      "vai_tro": "Xác thực mã QR, đối chiếu vị trí và lưu kết quả"
+    },
+    {
+      "ten": "Cơ sở dữ liệu",
+      "vai_tro": "Lưu trữ lịch sử điểm danh và thông tin sinh viên"
+    }
+  ],
+  "moi_de_doa": [
+    {
+      "ma": "M01",
+      "phat_bieu": "Sinh viên có thể điểm danh hộ bạn NẾU chụp lại mã QR rồi gửi cho người khác qua tin nhắn",
+      "nguyen_ly": 1,
+      "attack": "T1557",
+      "tac_dong": 4,
+      "kha_nang": 5
+    },
+    {
+      "ma": "M02",
+      "phat_bieu": "Kẻ tấn công có thể chỉnh sửa vị trí GPS NẾU ứng dụng di động không kiểm tra tính toàn vẹn của dữ liệu",
+      "nguyen_ly": 2,
+      "attack": "T1055",
+      "tac_dong": 3,
+      "kha_nang": 4
+    },
+    {
+      "ma": "M03",
+      "phat_bieu": "Kẻ tấn công có thể chặn và đọc dữ liệu NẾU kết nối truyền tải không được mã hóa TLS",
+      "nguyen_ly": 3,
+      "attack": "T1040",
+      "tac_dong": 4,
+      "kha_nang": 3
+    },
+    {
+      "ma": "M04",
+      "phat_bieu": "Người dùng có thể mạo danh giảng viên NẾU hệ thống không xác thực token JWT ở mỗi yêu cầu",
+      "nguyen_ly": 4,
+      "attack": "T1078",
+      "tac_dong": 5,
+      "kha_nang": 2
+    },
+    {
+      "ma": "M05",
+      "phat_bieu": "Sinh viên có thể truy cập điểm danh người khác NẾU ứng dụng thiếu phân quyền ở mức bản ghi",
+      "nguyen_ly": 5,
+      "attack": "T1083",
+      "tac_dong": 3,
+      "kha_nang": 4
+    },
+    {
+      "ma": "M06",
+      "phat_bieu": "Máy chủ có thể bị gián đoạn NẾU kẻ tấn công gửi liên tục hàng nghìn yêu cầu điểm danh giả lập",
+      "nguyen_ly": 6,
+      "attack": "T1498",
+      "tac_dong": 4,
+      "kha_nang": 3
+    },
+    {
+      "ma": "M07",
+      "phat_bieu": "Cơ sở dữ liệu bị lộ thông tin NẾU mật khẩu quản trị đặt mặc định hoặc quá ngắn",
+      "nguyen_ly": 7,
+      "attack": "T1110",
+      "tac_dong": 5,
+      "kha_nang": 3
+    },
+    {
+      "ma": "M08",
+      "phat_bieu": "Kẻ tấn công có thể chèn mã SQL NẾU máy chủ API không xóa bỏ các ký tự đặc biệt trong dữ liệu đầu vào",
+      "nguyen_ly": 1,
+      "attack": "T1190",
+      "tac_dong": 5,
+      "kha_nang": 2
+    }
+  ],
+  "chon_xu_ly": [
+    {
+      "ma": "M01",
+      "chi_phi": 2000000,
+      "don_vi": "VND",
+      "can_cu": "Chi phí tích hợp thư viện sinh mã QR động thay đổi theo thời gian"
+    },
+    {
+      "ma": "M04",
+      "chi_phi": 1500000,
+      "don_vi": "VND",
+      "can_cu": "Ước tính 5 giờ công lập trình viên nâng cấp cơ chế xác thực JWT"
+    },
+    {
+      "ma": "M07",
+      "chi_phi": 0,
+      "don_vi": "VND",
+      "can_cu": "Thực hiện cấu hình lại chính sách mật khẩu mạnh trên hệ thống"
+    }
+  ]
+}
